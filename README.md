@@ -41,15 +41,17 @@ Since this project is just getting started, we're aiming to build out four main 
 
 1. Notice that the ActionButton and Badge stories are working, but the Tile stories aren't. That's because storybook comes configured by default to look in the stories folder for relevant files, but doesn't check the subfolders of `components`. Open the `.storybook` directory and examine the config files. Find the array that indicates where stories are to be found, and add a new entry to that array which will help Storybook locate the stories files inside component folders.
 
-2. Once you've loaded in the Tile stories, turn your attention back to badges. Your badge is supposed to render green for a successful booking, red for a failed one, yellow for a pending booking, and grey for a canceled or abandoned booking, but it's clear that at least some of these features aren't finished. Figure out what needs to be changed, and revise the Badge component accordingly.
+2. Once that's done, go ahead and move ALL the stories to the folders of their specific components. It's definitely easier to use this way, and your team members have agreed on this as the norm.
 
-3. Next, turn your attention to the buttons. Notice that the first two buttons have working controls, but the third button doesn't. Follow the link to documentation about how to configure controls, and then rewrite the small button according to that documentation, referencing the other stories for examples about where to adjust or adapt to account for TypeScript.
+3. Once you've loaded in the Tile stories, turn your attention back to badges. Your badge is supposed to render green for a successful booking, red for a failed one, yellow for a pending booking, and grey for a canceled or abandoned booking, but it's clear that at least some of these features aren't finished. Figure out what needs to be changed, and revise the Badge component accordingly.
 
-4. Add a fourth story for a small, inactive button.
+4. Next, turn your attention to the buttons. Notice that the first two buttons have working controls, but the third button doesn't. Notice also that the first and second button are logging actions appropriately, but the third button is not. Follow the link in Storybook to the documentation about how to configure controls, and then rewrite the small button according to that documentation, referencing the other stories for examples about where to adjust or adapt to account for TypeScript.
 
-5. Add a new story for the Tile component and confirm that it's working as expected. [DOCUMENTATION CHALLENGE?]
+5. Add a fourth story for a small, inactive button.
 
-6. The Review component doesn't have any stories whatsoever. Add at least one story to test out the user reviews. If you've got writer's block, feel free to use the following raw data:
+6. Add a new story for the Tile component and confirm that it's working as expected. [DOCUMENTATION CHALLENGE?]
+
+7. The Review component doesn't have any stories whatsoever. Add at least one story to test out the user reviews. If you've got writer's block, feel free to use the following raw data:
 
 ```
 name: Jesse Howard
