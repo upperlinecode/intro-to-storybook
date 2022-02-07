@@ -5,7 +5,7 @@ export const ButtonRoot = styled.button<{
   active: boolean;
 }>`
   background-color: ${({ active }) =>
-    active ? "rgb(227, 28, 95)" : "darkgrey"};
+    active ? "rgb(28, 184, 227)" : "darkgrey"};
   color: white;
   padding: 14px 24px;
   border-radius: 8px;
