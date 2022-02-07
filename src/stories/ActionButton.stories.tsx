@@ -25,9 +25,6 @@ CheckAvailable.args = {
 export const InactiveButton = Template.bind({});
 InactiveButton.args = {
   text: "Sold Out",
-  onClick: () => {
-    console.log("ERROR: Inactive button press allowed");
-  },
   active: false,
   size: "large",
 };
