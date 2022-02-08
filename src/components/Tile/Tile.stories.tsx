@@ -2,7 +2,7 @@ import Tile, { TileProps } from "./Tile";
 import { Story } from "@storybook/react";
 
 export default {
-  title: "Listing Tile",
+  title: "Components/Listing Tile",
   component: Tile,
 };
 

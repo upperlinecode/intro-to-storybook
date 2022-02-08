@@ -2,7 +2,7 @@ import Badge, { BadgeProps } from "../components/Badge/Badge";
 import { Story } from "@storybook/react";
 
 export default {
-  title: "Badge",
+  title: "UI Components/Badge",
   component: Badge,
 };
 

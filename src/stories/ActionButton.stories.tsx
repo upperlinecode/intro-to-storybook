@@ -6,11 +6,8 @@ import { Story } from "@storybook/react";
 // What's the difference here?
 
 export default {
-  title: "Action Button",
+  title: "UI Components/Action Button",
   component: ActionButton,
-  argTypes: {
-    onClick: { action: "clicked" },
-  },
 };
 
 const Template: Story<ButtonProps> = (args) => <ActionButton {...args} />;
