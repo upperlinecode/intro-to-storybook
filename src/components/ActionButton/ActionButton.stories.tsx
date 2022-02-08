@@ -1,6 +1,4 @@
-import ActionButton, {
-  ButtonProps,
-} from "../components/ActionButton/ActionButton";
+import ActionButton, { ButtonProps } from "./ActionButton";
 import { Story } from "@storybook/react";
 // import { ComponentStory, ComponentMeta } from "@storybook/react";
 // What's the difference here?

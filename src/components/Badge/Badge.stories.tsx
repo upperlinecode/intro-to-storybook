@@ -1,4 +1,4 @@
-import Badge, { BadgeProps } from "../components/Badge/Badge";
+import Badge, { BadgeProps } from "./Badge";
 import { Story } from "@storybook/react";
 
 export default {
