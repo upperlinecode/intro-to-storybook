@@ -7,12 +7,17 @@ import {
 } from "./Review.styles";
 
 export interface ReviewProps {
+  /** Name of user who left the review */
   name: string;
+  /** Time of submission */
   date: Date;
+  /** Text of user's review. Limited to 800 characters by submission form. */
   reviewText: string;
+  /** URL for user's profile picture - square dimensions will be enforced by submission form. */
   profileURL: string;
 }
 
+/** The Review component is rendered as a small tile with the reviewer's name, review, and the date it was left. These reviews are meant to be rendered on the page for a specific property, or on a user's profile page. */
 const Review = (props: ReviewProps) => {
   const { name, date, reviewText, profileURL } = props;
   const months = [

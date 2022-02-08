@@ -2,7 +2,7 @@ import { Story } from "@storybook/react";
 import Review, { ReviewProps } from "./Review";
 
 export default {
-  title: "Review",
+  title: "Components/Review",
   component: Review,
 };
 

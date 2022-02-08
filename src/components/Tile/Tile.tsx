@@ -9,17 +9,27 @@ import {
 } from "./Tile.styles";
 
 export interface TileProps {
+  /** Vertical cards are fixed at a standard width for grid layouts or mobile lists. Horizontal tiles can be used for full-width list layouts. */
   orientation: "horizontal" | "vertical";
+  /** Title of the property to be rented. */
   title: string;
+  /** URL of image to be displayed. */
   imageURL: string;
+  /** Description of image, for accessibility via an `alt` attribute. */
   imageDescription: string;
+  /** Body of listing, advertising key features of the property. */
   bodyText: string;
+  /** Price per night of staying on the property. */
   price: number;
+  /** Maximum adult occupants per night on property. */
   maxOccupancy: number;
+  /** Approximate location of listing - assumes "City, ST" format, but works with any string. */
   city: string;
+  /** Indicates whether the button at the bottom of the card should show that a property is available for bookings, or be inactive. */
   active: boolean;
 }
 
+/** The Listing Tile is the primary component to show search results to a user who would like to make a booking. These tiles can be displayed vertically for grid or narrow displays, or horizontally for list displays.  */
 const Tile = (props: TileProps) => {
   const {
     title,

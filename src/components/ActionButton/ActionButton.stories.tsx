@@ -4,7 +4,7 @@ import { Story } from "@storybook/react";
 // What's the difference here?
 
 export default {
-  title: "Action Button",
+  title: "UI Components/Action Button",
   component: ActionButton,
   argTypes: {
     onClick: { action: "clicked" },
@@ -30,13 +30,16 @@ InactiveButton.args = {
   size: "large",
 };
 
-export const SmallButton = () => (
-  <ActionButton
-    text="Small Button"
-    onClick={() => {
-      console.log("Small button pressed");
-    }}
-    active={true}
-    size="small"
-  />
-);
+export const SmallButton = Template.bind({});
+SmallButton.args = {
+  text: "Small Button",
+  active: true,
+  size: "small",
+};
+
+export const InactiveSmallButton = Template.bind({});
+InactiveSmallButton.args = {
+  text: "Small Inactive Button",
+  active: false,
+  size: "small",
+};
