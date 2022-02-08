@@ -47,9 +47,9 @@ Since this project is just getting started, we're aiming to build out four main 
 
 4. Next, turn your attention to the buttons. Notice that the first two buttons have working controls, but the third button doesn't. Notice also that the first and second button are logging actions appropriately, but the third button is not. Follow the link in Storybook to the documentation about how to configure controls, and then rewrite the small button according to that documentation, referencing the other stories for examples about where to adjust or adapt to account for TypeScript.
 
-5. Add a fourth story for a small, inactive button.
+5. Add a fourth story for a small, inactive button. Before moving on to the next step, navigate to the "Docs" tab for the Action Button and notice that each argument has been briefly described.
 
-6. Add a new story for the Tile component and confirm that it's working as expected. [DOCUMENTATION CHALLENGE?]
+6. Add a new story for the Tile component and confirm that it's working as expected. Then navigate to the "Docs" tab and notice that the Tile component lacks the level of documentation detail that our UI components had. Open the `Tile.tsx` and use JSDoc comments to annotate the component and the props interface with any additional details the user might find helpful.
 
 7. The Review component doesn't have any stories whatsoever. Add at least one story to test out the user reviews. If you've got writer's block, feel free to use the following raw data:
 
