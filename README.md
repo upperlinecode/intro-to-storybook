@@ -47,11 +47,13 @@ Since this project is just getting started, we're aiming to build out four main 
 
 4. Next, turn your attention to the buttons. Notice that the first two buttons have working controls, but the third button doesn't. Notice also that the first and second button are logging actions appropriately, but the third button is not. Follow the link in Storybook to the documentation about how to configure controls, and then rewrite the small button according to that documentation, referencing the other stories for examples about where to adjust or adapt to account for TypeScript.
 
-5. Add a fourth story for a small, inactive button. Before moving on to the next step, navigate to the "Docs" tab for the Action Button and notice that each argument has been briefly described.
+5. Notice that our `ButtonProps` specify that the `onClick` prop is a function, and yet our stories don't include that `onClick` prop at all. However, the active buttons still register the event that would trigger the onClick function in the "Actions" tab in Storybook. Add a fourth story for an alert button, but this time _do_ include a function with an alert as the onClick prop. Notice that when there _is_ a function which can be run, the action is not logged in Storybook - the function is simply executed instead.
 
-6. Add a new story for the Tile component and confirm that it's working as expected. Then navigate to the "Docs" tab and notice that the Tile component lacks the level of documentation detail that our UI components had. Open the `Tile.tsx` and use JSDoc comments to annotate the component and the props interface with any additional details the user might find helpful.
+6. Add a fifth story for a small, inactive button. Before moving on to the next step, navigate to the "Docs" tab for the Action Button and notice that each argument has been briefly described.
 
-7. The Review component doesn't have any stories whatsoever. Add at least one story to test out the user reviews. If you've got writer's block, feel free to use the following raw data:
+7. Add a new story for the Tile component and confirm that it's working as expected. Then navigate to the "Docs" tab and notice that the Tile component lacks the level of documentation detail that our UI components had. Open the `Tile.tsx` and use JSDoc comments to annotate the component and the props interface with any additional details the user might find helpful.
+
+8. The Review component doesn't have any stories whatsoever. Add at least one story to test out the user reviews. If you've got writer's block, feel free to use the following raw data:
 
 ```
 name: Jesse Howard
