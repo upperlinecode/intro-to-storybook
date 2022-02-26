@@ -6,9 +6,9 @@ import { Story } from "@storybook/react";
 export default {
   title: "UI Components/Action Button",
   component: ActionButton,
-  argTypes: {
-    onClick: { action: "clicked" },
-  },
+  // argTypes: {
+  //   onClick: { action: "clicked" },
+  // }, // Note that our action is connected automatically
 };
 
 const Template: Story<ButtonProps> = (args) => <ActionButton {...args} />;
@@ -17,7 +17,7 @@ export const CheckAvailable = Template.bind({});
 CheckAvailable.args = {
   text: "Check availability",
   active: true,
-  size: "large",
+  size: "large", // note that we do not pass in an onClick, so the actions tab will catch it instead.
 };
 
 export const InactiveButton = Template.bind({});
@@ -42,4 +42,16 @@ InactiveSmallButton.args = {
   text: "Small Inactive Button",
   active: false,
   size: "small",
+};
+
+export const ActionDemoButton = Template.bind({});
+ActionDemoButton.args = {
+  text: "Action Demo Button",
+  active: true,
+  size: "small",
+  onClick: () => {
+    alert(
+      "This button will not register an action because it has a real function to execute instead."
+    );
+  },
 };
