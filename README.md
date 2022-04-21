@@ -61,3 +61,17 @@ date: October 2021
 review: Mariano was an exceptionally welcoming host, and the neighborhood was just as charming as advertised. If you're coming from further north, be sure to bring sunscreen with you - the beach really is walking distance away.
 profile pic: https://placeimg.com/400/400/people
 ```
+
+## Extensions
+
+Now that you've had time to practice building and testing components in Storybook, it's time to build you own based on the mockups your designer sent over.
+
+9. The design team wants a `SearchToggle` that serves as a visual indicator of what the user needs. The example below shows what a SearchToggle should look like when it's selected, when it's being hovered, and the default styling - in the image, the user has determined they need a gaming console, and are considering a Cat-friendly listing (hovering over that toggle), but has not selected a Home Gym. Write stories to test both the selected and unselected states.
+
+![Search Tiles - capsule-shaped styling and a thicker outline on the first implies they are clickable](SearchTilePreview.png)
+
+> Bear in mind that in addition to a text prop, the toggle will need to take a prop indicating whether or not it is currently selected, and an event handler function as a prop so that the parent component (presumably a component that handles searches) can be aware changes in the user's selections.
+
+10. Now that we've added that UI Component for a SearchToggle, we're ready to build out one small piece of the search. The `YourStay` component is part of a larger search component, so all it needs to know is how many nights you're looking for, and how many bedrooms you need. You can see that this will use the `SearchToggle` component, but it appears to use them in a slightly different way - more like radio buttons and less like checkboxes (and the background color is a bit different!). You may decide to build out an entirely new UIComponent, but this is definitely achievable with small-scale modifications.
+
+![Two horizontal rows of 9 capsule-shaped buttons each. The first row is labeled "Beds" and the second is labeled "Nights Available". The first capsule-shaped button in each row bears the word "Any" and the remaining eight show the numbers 1 to 8](YourStay.png)
